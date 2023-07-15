@@ -5,7 +5,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 // get a value
 app.get('/', (req, res) => {
-    res.send("mango khayega")
+    res.send("mango khayeg")
 })
 
 app.listen(5000, () => {
