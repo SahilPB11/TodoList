@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1> <%= kindofday %></h1>
+  </head>
+  <body>
+    <h1><%= kindofday %></h1>
 
+ <main>
     <ul>
         <li>buy food</li>
         <li>Cook food</li>
@@ -16,9 +18,16 @@
         <li><%= newItemsList[i] %></li>
         <% } %>
         <form action="/" method="post">
-            <input type="text" name="newItem" placeholder="name" autocomplete="off">
-            <button type="submit">Add</button>
+          <input
+            type="text"
+            name="newItem"
+            placeholder="name"
+            autocomplete="off"
+            id="inpu"
+          />
+          <button type="submit" id="btn">Add</button>
         </form>
-    </ul>
-</body>
+      </ul>
+ </main>
+  </body>
 </html>
